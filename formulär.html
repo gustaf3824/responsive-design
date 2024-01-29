@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="sv">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Enkelt Formulär</title>
+    <link rel="stylesheet" href="formulär.css">
+</head>
+<body>
+    <div class="behållare">
+        <h1>Enkelt Formulär</h1>
+        <form action="tack-sida.html" method="get">
+            <label for="namn">Namn:</label>
+            <input type="text" id="namn" name="namn" required>
+
+            <label for="epost">E-post:</label>
+            <input type="email" id="epost" name="epost" required>
+
+            <label for="meddelande">Meddelande:</label>
+            <textarea id="meddelande" name="meddelande" rows="4" required></textarea>
+
+            <label for="kön">Kön:</label>
+            <select id="kön" name="kön">
+                <option value="man">Man</option>
+                <option value="kvinna">Kvinna</option>
+                <option value="annat">Annat</option>
+            </select>
+
+            <label>Preferenser:</label>
+            <input type="checkbox" id="preferens1" name="preferens[]" value="alternativ1">
+            <label for="preferens1">Alternativ 1</label>
+
+            <input type="checkbox" id="preferens2" name="preferens[]" value="alternativ2">
+            <label for="preferens2">Alternativ 2</label>
+
+            <label>Typ av användare:</label>
+            <input type="radio" id="användarTyp1" name="användarTyp" value="typ1">
+            <label for="användarTyp1">Typ 1</label>
+
+            <input type="radio" id="användarTyp2" name="användarTyp" value="typ2">
+            <label for="användarTyp2">Typ 2</label>
+
+            <input type="submit" value="Skicka">
+        </form>
+    </div>
+</body>
+</html>

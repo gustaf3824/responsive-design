@@ -9,7 +9,7 @@ body {
     position: relative;
 }
 
-.wrapper {
+.omslag {
     width: 100vmin;
     height: 60vmin; 
     position: relative;
@@ -17,12 +17,12 @@ body {
     background-color: lightgray; 
 }
 
-.rectangle {
+.rektangel {
     width: 100%;
     height: 100%;
 }
 
-.circle {
+.cirkel {
     width: 60vmin;
     height: 60vmin;
     background-color: purple;
